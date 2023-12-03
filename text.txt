@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數位科技概論自我介紹</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-user-select: none;  /*禁止文本被選中*/
+            -moz-user-select: none; /*禁止文本被選中*/
+            -ms-user-select: none;  /*禁止文本被選中*/
+            user-select: none;  /*禁止文本被選中*/
+        }
+        
+        p{
+            transition: 1s;
+            font-size: 20px;
+            color: RGBA(255,255,255,1);
+            font-weight: bold;
+            text-align: center;
+        }
+        span{
+            transition: 1s;
+            font-size: 20px;
+            color: RGBA(255,255,255,1);
+            font-weight: bold;
+
+        }
+        /* .top_sl{  
+            width: 100%;
+            height: 60px;
+            background-color: red;
+        } */
+        /* 本來想做top 至頂模塊  但還是算了 想不出要要加甚麼功能 */
+        @keyframes myanimation {
+            0% { background-color: RGBA(20,20,20,0.8);  }
+            100% { background-color: RGBA(20,20,20,0);  }
+        }
+        @keyframes deMyanimation {
+            0% { background-color: RGBA(20,20,20,0);  }
+            100% { background-color: RGBA(20,20,20,0.8);  }
+        }
+
+        .sc_body{  
+            /* 搜索模塊 */
+            width: 100%;
+            height: 700px;
+            background: url("https://cdn.discordapp.com/attachments/1153337394926473217/1180839789294010459/image.png?ex=657ee1c0&is=656c6cc0&hm=7d34491e6c5b67cfdb530f2e44f3cc18f040bdf35372ae2790f764f48d6e1e2e&") center / cover no-repeat;
+            z-index: 0;
+        }
+        .bottom{
+            display:flex;
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+            height: 190px;
+            transition: 1s;
+            background-color: RGBA(0,0,0,0.8);
+        }
+        .ws{ 
+            width: 30%;
+            height: 100%;
+        }
+        .introduce{
+            /* 自我介紹 */
+            top:0;
+            width: 100%;
+            height: 2200px;
+            transition: 1s;
+            background: url("2.jpg") center / cover no-repeat;
+        }
+        .show_war{
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            background-color: RGBA(20,20,20,0.8);
+
+        }
+        .tr_txt{
+            width: 70%;
+            height: 100%;
+        }
+        .tr_txt >p{
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-size: 50px;
+            text-align: left;
+        }
+        .myInformat{
+            display:flex;
+            justify-content: space-between;
+            position: relative;
+            left: 10%;
+            width: 75%;
+            height: 300px;
+            transition: 1s;
+        }
+        .myInformat_one{
+            top: 650px;
+        }
+        .myInformat_two{
+            top: 750px;
+        }
+        .myInformat_three{
+            top: 850px;
+        }
+        .myInformat_four{
+            top: 950px;
+        }
+        .myInformat_imgDiv{
+            width: 300px;
+            height: 300px;
+            transition: 1s;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+        .myInformat_txtDiv{
+            width: 60%;
+            height: 100%;
+            transition: 1s;
+            border-radius: 10px;
+            background-color: transparent;
+            font-size: 30px;
+            color: RGBA(255,255,255,1);
+            font-weight: bold;
+        }
+        #one_imgDiv{
+            width: 0px;
+            height: 280px;
+            border: 3px solid transparent;
+            background: url("1.webp") center / cover no-repeat;
+            transition: 1s;
+        }
+        #two_imgDiv{
+            width: 0px;
+            height: 0px;
+            border: 3px solid transparent;
+            transition: 1s;
+        }
+        #three_imgDiv{
+            width: 300px;
+            height: 0px;
+            border-right: 3px solid transparent;
+            transition: 1s;
+        }
+        #four_imgDiv{
+            width: 0px;
+            height: 0px;
+            border: 3px solid transparent;
+            transition: 1s;
+        }
+        .myInformat_txtDiv > span{
+            font-size: 30px;
+        }
+	#myInformat_two_txt{
+	    font-size: 24px !important;
+	}
+        .herf{
+	    color: white;
+	}
+    </style>
+
+</head>
+<body>
+    <!-- <section class="top_sl">
+        <div class=""></div>
+    </section>  -->  
+    <!-- 本來想做top 至頂模塊  但還是算了 想不出要要加甚麼功能 -->
+    <section class="sc_body" id = "sc_body">
+    </section>
+    <section class="introduce">
+        <div class="show_war">
+            <!-- <div class="myInfor"></div> -->
+            <div class="myInformat_one myInformat">
+                <div class="myInformat_imgDiv" id = "myInformat_one_img">
+                    <div id ="one_imgDiv"></div>
+                    <p id = "one_txtDiv">Who's that</p>
+                </div>
+                <div class="myInformat_txtDiv" id ="myInformat_one_txt">
+                    <br>　　我叫　謝士宏　來自 雲林<br><br>　　畢業於斗六家商資料處理科<br><br>　　現就讀國立臺中科技大學日間部資工系一年級
+                </div>
+            </div>
+            <div class="myInformat_two myInformat">
+                <div class="myInformat_txtDiv" id = "myInformat_two_txt">
+                    <br>　我的個性　　|　樂觀　|　隨和　|　我不知道了　|<br><br><br><br>
+                    　喜好/興趣是　聽音樂　打LOL　原神啟動　看影片　
+                </div>
+                <div class="myInformat_imgDiv" id = "myInformat_two_img">
+                    <div id ="two_imgDiv"></div>
+                    <p id = "two_txtDiv"></p>
+                </div>
+            </div>
+            <div class="myInformat_three myInformat">
+                <div class="myInformat_imgDiv" id = "myInformat_three_img">
+                    <div id ="three_imgDiv"></div>
+                    <p id = "three_txtDiv"></p>
+                </div>
+                <div class="myInformat_txtDiv" id = "myInformat_three_txt">
+                    <br>　　最喜歡吃　蘋果　西瓜　雞肉<br>
+		    <br>　　喜歡的動物	　　　貓　　狗　　魚<br>
+                    <br>　　討厭吃　　苦瓜　茄子 柿子 蝦子
+                </div>
+            </div>
+            <div class="myInformat_four myInformat">
+                <div class="myInformat_txtDiv" id = "myInformat_four_txt">
+                    <br>　　因為高職被會計跟經濟摧殘
+                    <br>　　但我想要學IOT相關的
+                    <br>　　所以就讀資工系
+                    <br>　　讀大學以後覺得好忙
+                    <br>　　好想要天天遊戲打到爽
+		    <p class="herf"><a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" class="herf" /><br>點我</p>
+                </div>
+                <div class="myInformat_imgDiv" id = "myInformat_four_img">
+                    <div id ="four_imgDiv"></div>
+                    <p id = "four_txtDiv"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="ws"></div>
+        <div class="tr_txt">
+            <p id="tr_txt_p">自我介紹</p>
+            <span id ="tr_txt_span">請使用滑鼠滾輪下滑 或 使用滑塊 瀏覽</span>
+        </div>
+    </section>
+</body>
+<script>
+    // (getScrollTop) => { //獲取單次距離top值
+    //     var scr_top = 0;
+    //     if (document.documentElement && document.documentElement.scrollTop) {
+    //         scr_top = document.documentElement.scrollTop;
+    //     }
+    //     else if (document.body) {
+    //         scr_top = document.documentElement.scrollTop;
+    //     }
+    //     console.log(scr_top)
+    //     return scr_top;
+    // }
+
+    let scrTop_pr = 0
+    let scr_times = 0
+    let ws = document.querySelector('.ws')
+    var show_war = document.querySelector('.show_war')
+    var bottom_show = document.querySelector('.bottom')
+    var introduce = document.querySelector('.introduce')
+    var myInformat_one = document.querySelector('.myInformat_one'),
+        myInformat_two = document.querySelector('.myInformat_two'),
+        myInformat_three = document.querySelector('.myInformat_three'),
+        myInformat_four = document.querySelector('.myInformat_four');
+    
+    console.log(show_war,bottom_show,introduce,myInformat_one,myInformat_two,myInformat_three,myInformat_four)
+
+    window.addEventListener('scroll', function(){ //實時檢視 top距離並返回
+        var scrTop = window.pageYOffset || document.documentElement.scrollTop|| document.body.scrollTop;
+        scrTop_pr = scrTop
+        // console.log(scrTop_pr)
+
+        if(scrTop_pr >= 700){
+            scr_times = scr_times +1
+            show_war.style.backgroundColor = 'RGBA(0,0,0,0 )'
+            bottom_show.style.backgroundColor = 'RGBA(0,0,0,0)'
+            tr_txt_p.style.color = 'RGBA(255,255,255,0)'
+            tr_txt_span.style.color = 'RGBA(255,255,255,0)'
+            
+        }else if (scrTop_pr <= 700 && scr_times >= 1){
+            show_war.style.backgroundColor = 'RGBA(20,20,20,0.8)'
+            bottom_show.style.backgroundColor = 'RGBA(0,0,0,0.9)'
+            tr_txt_p.style.color = 'RGBA(255,255,255,1)'
+            tr_txt_span.style.color = 'RGBA(255,255,255,1)'
+        }
+        //
+        //
+        // 更優的寫法是用數組選中div元素
+        // myInfor = [myInformat_one,myInformat_two,myInformat_three,myInformat_four]
+        // 並用for(i = 0; i < myInfor.lenth ; i++){1411232093}方式計算固定scrTop_pr值回傳並更新div的透明度
+        //         但是礙於網頁長度不足 所以只用if else會較為靈活
+        //
+        //
+
+        if(scrTop_pr >= 700){
+            myInformat_one_txt.style.backgroundColor = 'RGBA(54,64,99,.3)'
+            one_imgDiv.style.width = '300px'
+            one_imgDiv.style.border = '3px solid white'
+            one_txtDiv.style.color = 'white'
+            myInformat_one_txt.style.color = 'white'
+        }else{
+            myInformat_one_txt.style.backgroundColor = 'transparent'
+            one_imgDiv.style.width = '0px'
+            one_imgDiv.style.border = '0px solid white'
+            one_txtDiv.style.color = 'transparent'
+            myInformat_one_txt.style.color = 'transparent'
+        }
+
+        if (scrTop_pr >= 1450){
+            myInformat_one_txt.style.backgroundColor = 'transparent'
+            one_imgDiv.style.width = '0px'
+            one_imgDiv.style.border = '0px solid white'
+            one_txtDiv.style.color = 'transparent'
+            myInformat_one_txt.style.color = 'transparent'
+
+            myInformat_two_txt.style.backgroundColor = 'RGBA(54,64,99,.3)'
+            two_imgDiv.style.height = '300px'
+            two_imgDiv.style.border = '3px solid white'
+            two_txtDiv.style.color = 'white'
+            myInformat_two_txt.style.color = 'white'
+
+            myInformat_three_txt.style.backgroundColor = 'RGBA(54,64,99,.3)'
+            three_imgDiv.style.height = '300px'
+            three_imgDiv.style.borderRight = '6px solid white'
+            three_txtDiv.style.color = 'white'
+            myInformat_three_txt.style.color = 'white'
+            
+        }else{
+            myInformat_two_txt.style.backgroundColor = 'transparent'
+            two_imgDiv.style.height = '0px'
+            two_imgDiv.style.border = '3px solid transparent'
+            two_txtDiv.style.color = 'transparent'
+            myInformat_two_txt.style.color = 'transparent'
+            
+        }
+
+        if (scrTop_pr >= 1850){
+            myInformat_two_txt.style.backgroundColor = 'transparent'
+            two_imgDiv.style.height = '0px'
+            two_imgDiv.style.border = '3px solid transparent'
+            two_txtDiv.style.color = 'transparent'
+            myInformat_two_txt.style.color = 'transparent'
+
+            myInformat_four_txt.style.backgroundColor = 'RGBA(54,64,99,.3)'
+            four_imgDiv.style.height = '300px'
+            four_imgDiv.style.border = '3px solid white'
+            four_txtDiv.style.color = 'white'
+            myInformat_four_txt.style.color = 'white'
+        }else{
+            myInformat_three_txt.style.backgroundColor = 'transparent'
+            three_imgDiv.style.height = '0px'
+            three_imgDiv.style.borderRight = '3px solid transparent'
+            three_txtDiv.style.color = 'transparent'
+            myInformat_three_txt.style.color = 'transparent'
+        }
+
+        if (scrTop_pr >= 2096){
+            myInformat_three_txt.style.backgroundColor = 'transparent'
+            three_imgDiv.style.height = '0px'
+            three_imgDiv.style.borderRight = '3px solid transparent'
+            three_txtDiv.style.color = 'transparent'
+            myInformat_three_txt.style.color = 'transparent'
+        }else{
+            myInformat_four_txt.style.backgroundColor = 'transparent'
+            four_imgDiv.style.height = '0px'
+            four_imgDiv.style.border = '3px solid transparent'
+            four_txtDiv.style.color = 'transparent'
+            myInformat_four_txt.style.color = 'transparent'
+        }
+    })
+
+</script>
+</html>
